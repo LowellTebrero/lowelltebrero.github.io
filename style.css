@@ -110,3 +110,71 @@ a {
   ::-webkit-scrollbar-thumb {
     border-radius: 10px;
   }
+
+
+  .bright-light {
+    border-radius: 50%;
+    background-color: #542481;
+    box-shadow: 0px 0px 18px rgb(255, 0, 170);
+    animation: animate 20s linear infinite;
+    
+  }
+  .bright-light-1 {
+    border-radius: 50%;
+    background-color: #722481;
+    box-shadow: 0px 0px 18px rgb(255, 0, 170);
+    animation: animate 30s linear infinite;
+    
+  }
+  .bright-light-2 {
+    border-radius: 50%;
+    background-color: #813e24;
+    box-shadow: 0px 0px 18px rgb(255, 0, 170);
+    animation: animate 10s linear infinite;
+    
+  }
+
+  .wrapper div:nth-child(1) {
+    animation-delay: 0.6s;
+  }
+  .wrapper div:nth-child(2) {
+    animation-delay: 0.7s;
+  }
+  .wrapper div:nth-child(3) {
+    animation-delay: 1s;
+  }
+  .wrapper div:nth-child(4) {
+    animation-delay: 0.9s;
+  }
+  .wrapper div:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  .wrapper div:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+  .wrapper div:nth-child(7) {
+    animation-delay: 0.10s;
+  }
+  .wrapper div:nth-child(8) {
+    animation-delay: 0.12s;
+  }
+  .wrapper div:nth-child(9) {
+    animation-delay: 0.8s;
+  }
+
+  @keyframes animate {
+    0% {
+     
+      opacity: 0;
+    }
+  
+    50% {
+      
+      opacity: 1;
+    }
+  
+    100% {
+     
+      opacity: 0;
+    }
+  }
