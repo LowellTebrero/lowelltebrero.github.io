@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html {
+    font-family: "Poppins", sans-serif;
+    scrollbar-color: rgb(161, 161, 161)rgb(48, 48, 48);
+    scrollbar-width: thin;
+    
+}
+
+
+
+.relativly {
+    position: relative;
+}
+.absolutly {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+
+}
+
+.bg-gradient {
+    background-image: linear-gradient(to top, #24273E, #24273E, #1b1e32);
+}
+
+.dev-color {
+   color: #EF74F1;
+}
+
+.text-outline {
+    font-weight: 800;
+    font-size: 5rem;
+    color: transparent;
+    -webkit-text-stroke-width: .6px;
+    -webkit-text-stroke-color: #cecece;
+}
+
+.text-title-outline {
+    font-weight: 800;
+    font-size: 4.7rem;
+    color: transparent;
+    -webkit-text-stroke-width: .6px;
+    -webkit-text-stroke-color: #5a5a5a;
+}
+
+.text-gradient{
+    /* Fallback: Set a background color. */
+    background-color: red;
+    
+    /* Create the gradient. */
+    background-image: linear-gradient(to right, #BA15F4, #F15D78, #EA8C6F);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+.h1 {
+
+    font-weight: bold;
+    font-size: 3rem;
+  
+}
+.saturation {
+    filter: saturate(0);
+    transition: .5s ease;
+}
+.saturation:hover {
+    filter: saturate(100%);
+}
+
+/* <reset-style> ============================ */
+a {
+    text-decoration: none;
+  }
+  /* <main-style> ============================ */
+  
+  .main__scroll-box {
+    animation: scroll-down 3s infinite;
+  }
+  
+  /* Animate scroll icon */
+  @keyframes scroll-down {
+    0%, 100% {
+      transform: translateY(0rem);
+      opacity: 1;
+    }
+  
+    35% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  
+    70% {
+      transform: translateY(-1rem);
+      opacity: 0;
+    }
+  }
+
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  }
