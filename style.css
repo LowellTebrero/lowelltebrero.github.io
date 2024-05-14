@@ -198,7 +198,10 @@ a {
     transform: rotate(0deg);
   }
 }
+.w-zero {
+  width: 0rem;
+}
 
-.change-width {
-  left: 50rem;
+.w-change {
+  width: 15rem;
 }

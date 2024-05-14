@@ -28,6 +28,6 @@ function onSubmit(event) {
 
 function toggle() {
  const sidebar =  document.getElementById('sidebar');
- sidebar.classList.toggle('change-width');
+ sidebar.classList.toggle('w-change');
 
 }
