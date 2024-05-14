@@ -31,7 +31,6 @@ html {
 
 .text-outline {
     font-weight: 800;
-    font-size: 5rem;
     color: transparent;
     -webkit-text-stroke-width: .6px;
     -webkit-text-stroke-color: #cecece;
@@ -39,7 +38,6 @@ html {
 
 .text-title-outline {
     font-weight: 800;
-    font-size: 4.7rem;
     color: transparent;
     -webkit-text-stroke-width: .6px;
     -webkit-text-stroke-color: #5a5a5a;
@@ -178,3 +176,34 @@ a {
       opacity: 0;
     }
   }
+
+.waving {
+  animation: waves 5s infinite ;
+}
+
+@keyframes waves {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(60deg);
+  }
+ 
+  10% {
+    transform: rotate(-20deg);
+  }
+  15% {
+    transform: rotate(60deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+ 
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.change-width {
+  left: 50rem;
+}

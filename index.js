@@ -24,3 +24,10 @@ function onSubmit(event) {
       console.log("An error occurred while submitting the form");
   });
 }
+
+
+function toggle() {
+ const sidebar =  document.getElementById('sidebar');
+ sidebar.classList.toggle('change-width');
+
+}

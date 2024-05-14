@@ -33,30 +33,101 @@
             <span class="dev-color">Dev</span>
             Lowell
           </h1>
+          <div class="hidden sm:block">
+            <ul class="flex gap-x-10 ">
+              <li class="text-white"><a href="#about-me">About me</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Hire me</a></li>
+            </ul>
+          </div>
 
-          <ul class="flex gap-x-10">
+          <div class="block sm:hidden z-50">
+            <button onclick="toggle()">
+              <img src="img/burger.png" width="30" alt="">
+            </button>
+        </div>
+
+        <aside class="fixed right-0 top-0 bg-blue-950 h-full w-[15rem] block sm:hidden" id="sidebar">
+          <ul class="flex flex-col gap-y-10 p-5 pt-[5rem]">
             <li class="text-white"><a href="#about-me">About me</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Hire me</a></li>
           </ul>
+        </aside>
+
+       
+
+        
+        
         </nav>
       </header>
 
-      <main class="hero-section flex mt-10 h-[80svh]" id="about-me">
-        <div class="w-full text-white flex flex-col gap-y-[6rem] py-[8rem]">
+      <main class="hero-section flex flex-col lg:flex-row xl:mt-10 h-[80svh]" id="about-me">
+        <div class="w-full text-white flex items-center lg:items-start flex-col gap-y-[6rem] py-[4rem] pb-[0] lg:py-[8rem]">
           <div class="relative">
-            <h1 class="text-outline">Web Developer?</h1>
-            <h1 class="text-gradient h1 absolute top-[3.8rem] left-[2.8rem]">
+            <h1 class="text-outline text-[2.5rem] sm:text-[3.6rem] lg:text-[3.5rem] xl:text-[4.2rem] 2xl:text-[5rem]">Web Developer?</h1>
+            <h1 class="text-gradient text-[2rem] sm:text-[2.5rem] lg:text-[2.7rem] xl:text-[3rem] 2xl:text-[3.2rem] h1 absolute top-[1.8rem] left-[2.5rem] lg:top-[2rem] xl:top-[2.5rem] 2xl:top-[3rem]">
               A Web Designer?
             </h1>
           </div>
 
-          <div class="flex flex-col gap-y-5 text-slat-400 text-slate-200">
-            <h1 class="text-2xl tracking-wider font-medium">
-              Hi, I’m Lowell Tebrero
-            </h1>
-            <p class="w-[35rem] font-extralight tracking-wide">
+          <div class="hidden lg:block">         
+            <div class="flex items-center lg:items-start flex-col gap-y-5 text-slat-400 text-slate-200">
+              <div class="flex  gap-x-3">
+                <h1 class="text-2xl tracking-wider font-medium">
+                  Hi, I’m Lowell Tebrero 
+                </h1>
+                <span><img src="img/waving.png" width="30" class="waving"  alt="waving"></span>
+              </div>
+              <p class="w-auto text-center lg:text-start font-extralight tracking-wide text-sm xl:text-lg">
+                A web developer and web designer with 2
+                years of experience, I can create seamless websites using my
+                skills, dedication, and perseverance, applying my knowledge of
+                UI/UX fundamentals. I am willing to adopt other people's thoughts
+                in order to grow my passion and career so that I can share my
+                knowledge and connect with them. 
+              </p>
+              <a href="https://drive.google.com/file/d/16EtxvhX0bf5JnUDAJkUrDgc4e2zje9j5/view?usp=drive_link" target="_blank" class="w-auto  p-2 rounded bg-slate-900 hover:bg-slate-800 text-center">
+                Download CV
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="w-full flex items-start justify-center lg:justify-end pt-[2rem] lg:pt-[10rem] pr-0 2xl:pr-[5rem]">
+          <div class="relative">
+            <img
+              class="z-40 saturation w-[15rem] xl:w-[17rem] 2xl:w-[22rem]"
+              src="img/Profile.png"
+              width="350"
+              alt="Profile"
+            />
+            <img
+              class="absolute bottom-[7rem] right-0 -z-10 w-[10rem] xl:w-[12rem] 2xl:w-[15rem]"
+              src="img/Ellipse-1.png"
+              width="250"
+              alt=""
+            />
+            <img
+              class="absolute bottom-[5rem] left-2 -z-10 w-[8rem] xl:w-[10rem] 2xl:w-[12rem]"
+              src="img/Ellipse-2.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="block lg:hidden mt-10">         
+          <div class="flex items-center lg:items-start flex-col gap-y-5 text-slat-400 text-slate-200">
+            <div class="flex  gap-x-3">
+              <h1 class="text-2xl tracking-wider font-medium">
+                Hi, I’m Lowell Tebrero 
+              </h1>
+              <span><img src="img/waving.png" width="30" class="waving"  alt="waving"></span>
+            </div>
+            <p class="w-auto text-center lg:text-start font-extralight tracking-wide text-sm lg:text-lg">
               A web developer and web designer with 2
               years of experience, I can create seamless websites using my
               skills, dedication, and perseverance, applying my knowledge of
@@ -64,36 +135,15 @@
               in order to grow my passion and career so that I can share my
               knowledge and connect with them. 
             </p>
-            <a href="https://drive.google.com/file/d/16EtxvhX0bf5JnUDAJkUrDgc4e2zje9j5/view?usp=drive_link" target="_blank" class="w-[20%] py-2 rounded bg-slate-900 hover:bg-slate-800 text-center">
+            <a href="https://drive.google.com/file/d/16EtxvhX0bf5JnUDAJkUrDgc4e2zje9j5/view?usp=drive_link" target="_blank" class="w-auto  p-2 rounded bg-slate-900 hover:bg-slate-800 text-center">
               Download CV
             </a>
           </div>
         </div>
 
-        <div class="w-full flex items-start justify-end pt-[10rem] pr-[5rem]">
-          <div class="relative">
-            <img
-              class="z-40 saturation"
-              src="img/Profile.png"
-              width="350"
-              alt="Profile"
-            />
-            <img
-              class="absolute bottom-[7rem] right-0 -z-10"
-              src="img/Ellipse-1.png"
-              width="250"
-              alt=""
-            />
-            <img
-              class="absolute bottom-[5rem] left-2 -z-10"
-              src="img/Ellipse-2.png"
-              alt=""
-            />
-          </div>
-        </div>
       </main>
 
-      <div class="flex items-center justify-center flex-col gap-y-4">
+      <div class="flex items-center justify-center mt-[10rem] md:mt-0">
         <div class="main__scroll-box">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -118,13 +168,13 @@
         class="h-[90svh] flex flex-col gap-y-16 items-center justify-center"
       >
         <div class="relative">
-          <h1 class="text-title-outline">SKILLS</h1>
+          <h1 class="text-title-outline text-[4.5rem]">SKILLS</h1>
           <h1 class="text-gradient h1 absolute top-[2.2svh] left-[3rem]">
             SKILLS
           </h1>
           <h4 class="text-slate-400">skills that I have had for quite a while.</h4>
         </div>
-        <div class="flex gap-x-10">
+        <div class="grid grid-cols-3 md:grid-cols-8 xl:grid-cols-9 gap-10">
           <img
             src="img/laravel.png"
             width="50"
@@ -184,7 +234,7 @@
 
       <section id="projects" class="h-[90svh] flex flex-col gap-y-16">
         <div class="relativly flex flex-col items-center justify-center">
-          <h1 class="text-title-outline">PROJECTS</h1>
+          <h1 class="text-title-outline text-[4.5rem]">PROJECTS</h1>
           <h1 class="text-gradient h1 absolutly">PROJECTS</h1>
           <h4 class="text-slate-400 text-center">
             The projects are merely a few of my learning journey's personal or not-for-profit endeavors.
@@ -194,12 +244,12 @@
 
       <section id="contact" class="h-[90svh] flex flex-col gap-y-[9rem]">
         <div class="relativly flex flex-col items-center justify-center">
-          <h1 class="text-title-outline">GET IN TOUCH</h1>
+          <h1 class="text-title-outline text-[4.5rem]">GET IN TOUCH</h1>
           <h1 class="text-gradient h1 absolutly">GET IN TOUCH</h1>
           <h4 class="text-slate-400 text-center">Hire me</h4>
         </div>
 
-        <div class="flex h-[50svh]">
+        <div class="flex flex-col md:flex-row h-[50svh]">
           <div class="w-full text-white flex flex-col gap-y-5">
             <h1 class="text-4xl font-medium">Send me a message</h1>
             <div>
