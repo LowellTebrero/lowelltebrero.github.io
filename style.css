@@ -62,12 +62,7 @@ html {
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
 }
-.h1 {
 
-    font-weight: bold;
-    font-size: 3rem;
-  
-}
 .saturation {
     filter: saturate(0);
     transition: .5s ease;
