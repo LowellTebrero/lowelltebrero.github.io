@@ -205,3 +205,11 @@ a {
 .w-change {
   width: 15rem;
 }
+
+.image-wrapper img {
+  transition: all .5s ease-in;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.1);
+}
