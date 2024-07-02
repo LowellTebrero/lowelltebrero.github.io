@@ -5,6 +5,7 @@ html {
     font-family: "Poppins", sans-serif;
     scrollbar-color: rgb(161, 161, 161)rgb(48, 48, 48);
     scrollbar-width: thin;
+    scroll-behavior: smooth;
     
 }
 
