@@ -5,21 +5,17 @@ html {
     font-family: "Poppins", sans-serif;
     scrollbar-color: rgb(161, 161, 161)rgb(48, 48, 48);
     scrollbar-width: thin;
-    scroll-behavior: smooth;
-    
+    scroll-behavior: smooth;  
 }
-
-
 
 .relativly {
-    position: relative;
+  position: relative;
 }
 .absolutly {
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -35%);
-
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -35%);
 }
 
 .bg-gradient {
