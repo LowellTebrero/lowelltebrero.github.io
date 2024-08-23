@@ -68,6 +68,30 @@ html {
     filter: saturate(100%);
 }
 
+.tabcontent {
+  display: none;
+}
+
+.tabcontent.active {
+  display: block;
+
+}
+
+/* Default styling for tab buttons */
+.tablink {
+  padding: 10px 20px;
+  background-color: lightgray;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Styling for the active tab button */
+.tablink.active {
+  background-color: #3638d3; /* Green background color for active tab */
+  color: white;
+}
+
 /* <reset-style> ============================ */
 a {
     text-decoration: none;
@@ -198,6 +222,8 @@ a {
 .w-zero {
   width: 0rem;
 }
+
+
 
 .w-change {
   width: 15rem;
