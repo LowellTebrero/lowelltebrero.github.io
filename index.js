@@ -83,27 +83,39 @@ const thumbnailWrappers = document.querySelectorAll('.flex-none');
 // Store the currently featured thumbnail wrapper
 let currentThumbnailWrapper = null;
 
-// Add click event listener to each thumbnail wrapper
+// Function to handle the thumbnail click or touch
+function handleThumbnailClick(wrapper, thumbnail) {
+    // If the clicked thumbnail is the currently featured one, unhide it and reset the main image
+    if (currentThumbnailWrapper === wrapper) {
+        wrapper.style.display = "inline-block"; // Show the entire wrapper
+        currentThumbnailWrapper = null; // Reset the current thumbnail wrapper
+        featuredImage.src = ""; // Reset the featured image (optional: you can set a default image)
+    } else {
+        // Show the previously hidden wrapper (if any)
+        if (currentThumbnailWrapper) {
+            currentThumbnailWrapper.style.display = "inline-block"; // Show the previous wrapper
+        }
+
+        // Update the main featured image
+        featuredImage.src = thumbnail.src;
+
+        // Hide the clicked wrapper
+        wrapper.style.display = "none";
+        currentThumbnailWrapper = wrapper; // Set this wrapper as the currently featured one
+    }
+}
+
+// Add event listeners for both click and touch events
 thumbnailWrappers.forEach(wrapper => {
     const thumbnail = wrapper.querySelector('.thumbnail');
+
+    // Handle click event
     thumbnail.addEventListener('click', function() {
-        // If the clicked thumbnail is the currently featured one, unhide it and reset the main image
-        if (currentThumbnailWrapper === wrapper) {
-            wrapper.style.display = "inline-block"; // Show the entire wrapper
-            currentThumbnailWrapper = null; // Reset the current thumbnail wrapper
-            featuredImage.src = ""; // Reset the featured image (optional: you can set a default image)
-        } else {
-            // Show the previously hidden wrapper (if any)
-            if (currentThumbnailWrapper) {
-                currentThumbnailWrapper.style.display = "inline-block"; // Show the previous wrapper
-            }
+        handleThumbnailClick(wrapper, thumbnail);
+    });
 
-            // Update the main featured image
-            featuredImage.src = thumbnail.src;
-
-            // Hide the clicked wrapper
-            wrapper.style.display = "none";
-            currentThumbnailWrapper = wrapper; // Set this wrapper as the currently featured one
-        }
+    // Handle touch event
+    thumbnail.addEventListener('touchstart', function() {
+        handleThumbnailClick(wrapper, thumbnail);
     });
 });
