@@ -85,15 +85,15 @@ let currentThumbnailWrapper = null;
 
 // Function to handle the thumbnail click or touch
 function handleThumbnailClick(wrapper, thumbnail) {
-    // If the clicked thumbnail is the currently featured one, unhide it and reset the main image
+    // If the clicked thumbnail is already hidden (currently featured), reset the image
     if (currentThumbnailWrapper === wrapper) {
-        wrapper.style.display = "inline-block"; // Show the entire wrapper
+        wrapper.style.display = "inline-block"; // Show the entire wrapper again
         currentThumbnailWrapper = null; // Reset the current thumbnail wrapper
-        featuredImage.src = ""; // Reset the featured image (optional: you can set a default image)
+        featuredImage.src = ""; // Optionally reset the featured image
     } else {
-        // Show the previously hidden wrapper (if any)
+        // If there's a currently featured wrapper, show it again
         if (currentThumbnailWrapper) {
-            currentThumbnailWrapper.style.display = "inline-block"; // Show the previous wrapper
+            currentThumbnailWrapper.style.display = "inline-block";
         }
 
         // Update the main featured image
@@ -109,13 +109,14 @@ function handleThumbnailClick(wrapper, thumbnail) {
 thumbnailWrappers.forEach(wrapper => {
     const thumbnail = wrapper.querySelector('.thumbnail');
 
-    // Handle click event
-    thumbnail.addEventListener('click', function() {
+    // Add click event
+    thumbnail.addEventListener('click', function(event) {
         handleThumbnailClick(wrapper, thumbnail);
     });
 
-    // Handle touch event
-    thumbnail.addEventListener('touchstart', function() {
+    // Add touch event
+    thumbnail.addEventListener('touchstart', function(event) {
+        event.preventDefault(); // Prevent default touch behavior
         handleThumbnailClick(wrapper, thumbnail);
     });
 });
