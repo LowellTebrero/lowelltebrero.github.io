@@ -267,8 +267,3 @@ a {
     display: inline-block; /* Ensure the thumbnail takes space */
 }
 
-/* Scale effect on hover */
-.thumbnail:hover {
-    transform: scale(1.1); /* Slight zoom effect */
-}
-
