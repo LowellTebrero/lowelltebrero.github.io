@@ -77,7 +77,7 @@ if (previouslyActiveTab && previouslyActiveButtonIndex) {
 // Get the main featured image element
 const featuredImage = document.getElementById('featured-image').querySelector('img');
 
-// Get all the thumbnail images and their wrappers
+// Get all the thumbnail buttons
 const thumbnailWrappers = document.querySelectorAll('.flex-none');
 
 // Store the currently featured thumbnail wrapper
@@ -110,12 +110,12 @@ thumbnailWrappers.forEach(wrapper => {
     const thumbnail = wrapper.querySelector('.thumbnail');
 
     // Add click event
-    thumbnail.addEventListener('click', function(event) {
+    wrapper.addEventListener('click', function() {
         handleThumbnailClick(wrapper, thumbnail);
     });
 
     // Add touch event
-    thumbnail.addEventListener('touchstart', function(event) {
+    wrapper.addEventListener('touchstart', function(event) {
         event.preventDefault(); // Prevent default touch behavior
         handleThumbnailClick(wrapper, thumbnail);
     });
