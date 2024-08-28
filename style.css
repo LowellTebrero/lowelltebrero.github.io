@@ -77,8 +77,6 @@ html, body {
 
 }
 
-
-
 /* Default styling for tab buttons */
 .tablink {
  
@@ -93,6 +91,34 @@ html, body {
   background-color: #3638d3; /* Green background color for active tab */
   color: white;
 }
+
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.graphiclink {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.graphiclink.active {
+  color: rgb(75, 157, 250);
+  border: rgb(75, 157, 250) 1px solid;
+}
+.content {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+}
+.content.active {
+  display: block;
+}
+.highlight-content img {
+  width: 300px;
+  height: 300px;
+}
+
 
 /* <reset-style> ============================ */
 a {

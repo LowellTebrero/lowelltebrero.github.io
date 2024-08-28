@@ -73,6 +73,33 @@ if (previouslyActiveTab && previouslyActiveButtonIndex) {
 }
 
 
+const tabs = document.querySelectorAll('.graphiclink');
+const contents = document.querySelectorAll('.content');
+const activeGTab = localStorage.getItem('activeGTab') || 'highlights';
+
+// Set initial active tab
+document.querySelector(`.graphiclink[data-tab="${activeGTab}"]`).classList.add('active');
+document.getElementById(activeGTab).classList.add('active');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        // Remove active class from all tabs and contents
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+
+        // Add active class to the clicked tab and corresponding content
+        const target = tab.getAttribute('data-tab');
+        tab.classList.add('active');
+        document.getElementById(target).classList.add('active');
+
+        // Save the active tab to localStorage
+        localStorage.setItem('activeGTab', target);
+    });
+});
+
+
+
+
 
 // Get the main featured image element
 const featuredImage = document.getElementById('featured-image').querySelector('img');

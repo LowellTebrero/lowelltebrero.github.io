@@ -356,109 +356,161 @@
           
           <div id="graphics" class="tabcontent"> 
             <div class="flex items-center justify-center py-4 md:py-8 flex-wrap">
-              <button type="button" class="text-blue-700 hover:text-white border border-blue-600 bg-white hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-full text-base font-medium px-3 sm:px-5 py-2 sm:py-2.5 text-center me-3 mb-3 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800 text-xs sm:text-sm md:text-md">Highlights</button>
-              <button type="button" class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-3 sm:px-5 py-2 sm:py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800 text-xs sm:text-sm md:text-md">Social Media</button>
-              <button type="button" class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-3 sm:px-5 py-2 sm:py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800 text-xs sm:text-sm md:text-md">Poster</button>
-              <button type="button" class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-3 sm:px-5 py-2 sm:py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800 text-xs sm:text-sm md:text-md">Product</button>
-              <button type="button" class="text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-3 sm:px-5 py-2 sm:py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800 text-xs sm:text-sm md:text-md">Logo</button>
+              <button type="button" class="graphiclink text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-3 sm:px-5 py-2 sm:py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800 text-xs sm:text-sm md:text-md" data-tab="highlights">Highlights</button>
+              <button type="button" class="graphiclink text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-3 sm:px-5 py-2 sm:py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800 text-xs sm:text-sm md:text-md"data-tab="social" >Social Media</button>
+              <button type="button" class="graphiclink text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-3 sm:px-5 py-2 sm:py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800 text-xs sm:text-sm md:text-md"  data-tab="poster">Poster</button>
+              <button type="button" class="graphiclink text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-3 sm:px-5 py-2 sm:py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800 text-xs sm:text-sm md:text-md" data-tab="product">Product</button>
+              <button type="button" class="graphiclink text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 rounded-full text-base font-medium px-3 sm:px-5 py-2 sm:py-2.5 text-center me-3 mb-3 dark:text-white dark:focus:ring-gray-800 text-xs sm:text-sm md:text-md" data-tab="logo">Logo</button>
             </div>
 
-            <div class="hidden sm:block">
-              <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <div class="w-full h-full overflow-hidden">
-                    <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/Digital-1.jpg" alt="">
+            <div id="highlights" class="content">   
+              <div class="hidden sm:block">                  
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                  <div class="w-full h-full overflow-hidden p-0">
+                      <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/Digital-1.jpg" alt="">
+                  </div>
+                  <div class="w-full h-full overflow-hidden p-0">
+                      <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/Football-2.jpg" alt="">
+                  </div>
+                  <div class="w-full h-full overflow-hidden p-0">
+                      <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/AetherCoin.jpg" alt="">
+                  </div>
+                  <div class="w-full h-full overflow-hidden p-0">
+                      <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/Nike.jpg" alt="">
+                  </div>
+                  <div class="w-full h-full overflow-hidden p-0">
+                      <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/Donut.jpg" alt="">
+                  </div>
+                  <div class="w-full h-full overflow-hidden p-0">
+                      <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/SurgeFlow-2.jpg" alt="">
+                  </div>
+                  <div class="w-full h-full overflow-hidden p-0">
+                      <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/Mango-poster.jpg" alt="">
+                  </div>
+                  <div class="w-full h-full overflow-hidden p-0">
+                      <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/GreenApple.jpg" alt="">
+                  </div>
+                  <div class="w-full h-full overflow-hidden p-0">
+                      <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/Orange.jpg" alt="">
+                  </div>          
                 </div>
-                <div class="w-full h-full overflow-hidden">
-                    <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/Football-2.jpg" alt="">
-                </div>
-                <div class="w-full h-full overflow-hidden">
-                    <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/AetherCoin.jpg" alt="">
-                </div>
-                <div class="w-full h-full overflow-hidden">
-                    <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/Nike.jpg" alt="">
-                </div>
-                <div class="w-full h-full overflow-hidden">
-                    <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/Donut.jpg" alt="">
-                </div>
-                <div class="w-full h-full overflow-hidden">
-                    <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/SurgeFlow-2.jpg" alt="">
-                </div>
-                <div class="w-full h-full overflow-hidden">
-                    <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/Mango-poster.jpg" alt="">
-                </div>
-                <div class="w-full h-full overflow-hidden">
-                    <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/GreenApple.jpg" alt="">
-                </div>
-                <div class="w-full h-full overflow-hidden">
-                    <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/Orange.jpg" alt="">
-                </div>          
               </div>
 
+              <div class="block sm:hidden">
+                <div class="grid gap-4">
+                  <!-- Main image -->
+                  <div id="featured-image" class="featured-image-container">
+                    <div class="w-full h-full overflow-hidden">
+                      <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/Digital-1.jpg" alt="">
+                    </div>
+                  </div>
+              
+                  <!-- Thumbnails -->
+                  <div class="overflow-hidden w-full object-cover flow">
+                    <div class="flex w-full h-3/4 overflow-x-auto gap-3">
+  
+                      <div class="flex-none h-full w-2/5 thumbnail">
+                        <div class="w-full h-full p-1">
+                          <img class="thumbnail h-full w-full rounded-lg object-cover" src="/img/graphics/Football-2.jpg" alt="">                     
+                        </div>
+                      </div>
+  
+                      <div class="flex-none h-full w-2/5 thumbnail">
+                        <div class="w-full h-full p-1">
+                          <img class="thumbnail h-full w-full rounded-lg object-cover" src="/img/graphics/AetherCoin.jpg" alt="">                     
+                        </div>
+                      </div>
+                      <div class="flex-none h-full w-2/5 thumbnail">
+                        <div class="w-full h-full p-1">
+                          <img class="thumbnail h-full w-full rounded-lg object-cover" src="/img/graphics/Nike.jpg" alt="">                     
+                        </div>
+                      </div>
+                      <div class="flex-none h-full w-2/5">
+                        <div class="w-full h-full p-1">
+                          <img class="thumbnail h-full w-full rounded-lg object-cover" src="/img/graphics/Donut.jpg" alt="">                     
+                        </div>
+                      </div>
+                      <div class="flex-none h-full w-2/5">
+                        <div class="w-full h-full p-1">
+                          <img class="thumbnail h-full w-full rounded-lg object-cover" src="/img/graphics/SurgeFlow-2.jpg" alt="">                     
+                        </div>
+                      </div>
+                      <div class="flex-none h-full w-2/5">
+                        <div class="w-full h-full p-1">
+                          <img class="thumbnail h-full w-full rounded-lg object-cover" src="/img/graphics/Mango-poster.jpg" alt="">                     
+                        </div>
+                      </div>
+                      <div class="flex-none h-full w-2/5">
+                        <div class="w-full h-full p-1">
+                          <img class="thumbnail h-full w-full rounded-lg object-cover" src="/img/graphics/GreenApple.jpg" alt="">                     
+                        </div>
+                      </div>
+                      <div class="flex-none h-full w-2/5">
+                        <div class="w-full h-full p-1">
+                          <img class="thumbnail h-full w-full rounded-lg object-cover" src="/img/graphics/Orange.jpg" alt="">                     
+                        </div>
+                      </div>
+                      <div class="flex-none h-full w-2/5">
+                        <div class="w-full h-full p-1">
+                          <img class="thumbnail h-full w-full rounded-lg object-cover" src="/img/graphics/Digital-1.jpg" alt="">                     
+                        </div>
+                      </div>                                          
+                    </div>
+                  </div>
+                </div>                 
+              </div>  
             </div>
 
-            <div class="block sm:hidden">
-              <div class="grid gap-4">
-                <!-- Main image -->
-                <div id="featured-image" class="featured-image-container">
-                  <div class="w-full h-full overflow-hidden">
-                    <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/Digital-1.jpg" alt="">
+              <div id="social" class="content">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                  <div class="w-full h-full overflow-hidden p-0">
+                    <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/Donut.jpg" alt="">
+                </div>       
+                  <div class="w-full h-full overflow-hidden p-0">
+                      <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/Digital-1.jpg" alt="">
+                  </div>              
+                  <div class="w-full h-full overflow-hidden p-0">
+                      <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/AetherCoin.jpg" alt="">
                   </div>
+                  <div class="w-full h-full overflow-hidden p-0">
+                    <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/Football-2.jpg" alt="">
                 </div>
-            
-                <!-- Thumbnails -->
-                <div class="overflow-hidden w-full object-cover flow">
-                  <div class="flex w-full h-3/4 overflow-x-auto gap-3">
-
-                    <div class="flex-none h-full w-2/5 thumbnail">
-                      <div class="w-full h-full p-1">
-                        <img class="thumbnail h-full w-full rounded-lg object-cover" src="/img/graphics/Football-2.jpg" alt="">                     
-                      </div>
-                    </div>
-
-                    <div class="flex-none h-full w-2/5 thumbnail">
-                      <div class="w-full h-full p-1">
-                        <img class="thumbnail h-full w-full rounded-lg object-cover" src="/img/graphics/AetherCoin.jpg" alt="">                     
-                      </div>
-                    </div>
-                    <div class="flex-none h-full w-2/5 thumbnail">
-                      <div class="w-full h-full p-1">
-                        <img class="thumbnail h-full w-full rounded-lg object-cover" src="/img/graphics/Nike.jpg" alt="">                     
-                      </div>
-                    </div>
-                    <div class="flex-none h-full w-2/5">
-                      <div class="w-full h-full p-1">
-                        <img class="thumbnail h-full w-full rounded-lg object-cover" src="/img/graphics/Donut.jpg" alt="">                     
-                      </div>
-                    </div>
-                    <div class="flex-none h-full w-2/5">
-                      <div class="w-full h-full p-1">
-                        <img class="thumbnail h-full w-full rounded-lg object-cover" src="/img/graphics/SurgeFlow-2.jpg" alt="">                     
-                      </div>
-                    </div>
-                    <div class="flex-none h-full w-2/5">
-                      <div class="w-full h-full p-1">
-                        <img class="thumbnail h-full w-full rounded-lg object-cover" src="/img/graphics/Mango-poster.jpg" alt="">                     
-                      </div>
-                    </div>
-                    <div class="flex-none h-full w-2/5">
-                      <div class="w-full h-full p-1">
-                        <img class="thumbnail h-full w-full rounded-lg object-cover" src="/img/graphics/GreenApple.jpg" alt="">                     
-                      </div>
-                    </div>
-                    <div class="flex-none h-full w-2/5">
-                      <div class="w-full h-full p-1">
-                        <img class="thumbnail h-full w-full rounded-lg object-cover" src="/img/graphics/Orange.jpg" alt="">                     
-                      </div>
-                    </div>
-                    <div class="flex-none h-full w-2/5">
-                      <div class="w-full h-full p-1">
-                        <img class="thumbnail h-full w-full rounded-lg object-cover" src="/img/graphics/Digital-1.jpg" alt="">                     
-                      </div>
-                    </div>                                          
+                  <div class="w-full h-full overflow-hidden p-0">
+                      <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/Nike.jpg" alt="">
                   </div>
+                                                                   
                 </div>
-              </div>                 
-            </div>        
+              </div>
+              <div id="poster" class="content">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">                 
+                  <div class="w-full h-full overflow-hidden p-0">
+                      <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/movie-1.jpg" alt="">
+                  </div>
+                         
+                </div>
+              </div>
+              <div id="product" class="content">
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">                 
+                  <div class="w-full h-full overflow-hidden p-0">
+                      <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/SurgeFlow-2.jpg" alt="">
+                  </div>
+                  <div class="w-full h-full overflow-hidden p-0">
+                      <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/Mango-poster.jpg" alt="">
+                  </div>
+                  <div class="w-full h-full overflow-hidden p-0">
+                      <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/GreenApple.jpg" alt="">
+                  </div>
+                  <div class="w-full h-full overflow-hidden p-0">
+                      <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/Orange.jpg" alt="">
+                  </div>          
+                </div>
+              </div>
+              <div id="logo" class="content">
+                <h1>logo</h1>
+              </div>
+            </div>
+
+                 
           </div>
 
                       
