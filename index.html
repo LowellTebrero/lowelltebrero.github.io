@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Dev Lowell</title>
   </head>
-  <body class="min-h-[100svh] bg-gradient">
+  <body class="min-h-[100svh] bg-gradient w-[100%]">
     <section class="relative wrapper">
       <div
         class="bright-light w-[.3rem] h-[.3rem] fixed -z-10 left-[5%] top-[5%]"
@@ -56,7 +56,7 @@
         class="bright-light-1 w-[.3rem] h-[.3rem] fixed -z-10 right-[10%] top-[90%]"
       ></div>
     </section>
-    <section class="mx-auto w-[80%] md:w-[75%]">
+    <section class="mx-auto w-[85%] md:w-[75%] lg:w-[85%] xl:w-[80%] 2xl:w-[75%] ">
       <header class="text-slate-100 sticky top-0 z-50">
         <nav class="flex justify-between pt-5 text-gray-400">
           <h1 class="font-medium text-lg text-gray-200"><span class="dev-color">Port</span>folio</h1>
@@ -134,33 +134,31 @@
               passion and career so that I can share my knowledge to connect
               with. 
             </p>         
-            <a href="https://drive.google.com/file/d/16EtxvhX0bf5JnUDAJkUrDgc4e2zje9j5/view?usp=drive_link"
-              target="_blank" class="w-auto p-2 rounded bg-slate-900 hover:bg-slate-800 text-center text-sm">
-              Download CV
-            </a>
+             <div class="flex items-center justify-center mt-[5svh] lg:mt-[10svh] xl:mt-[2rem]">
+              <div class="main__scroll-box">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  width="2em"
+                  height="2em"
+                  viewBox="0 0 24 24">
+                  <path
+                    fill="none"
+                    stroke="#e3e3e3"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m7 10l5 5m0 0l5-5"/>
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    
 
-      <!-- <div class="flex items-center justify-center mt-[5svh] lg:mt-[10svh] xl:mt-[2rem]">
-        <div class="main__scroll-box">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="2em"
-            height="2em"
-            viewBox="0 0 24 24">
-            <path
-              fill="none"
-              stroke="#e3e3e3"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m7 10l5 5m0 0l5-5"
-            />
-          </svg>
-        </div>
-      </div> -->
+      <!-- <a href="https://drive.google.com/file/d/16EtxvhX0bf5JnUDAJkUrDgc4e2zje9j5/view?usp=drive_link"
+          target="_blank" class="w-auto p-2 rounded bg-slate-900 hover:bg-slate-800 text-center text-sm z-10">
+          Download CV
+      </a> -->
+    
 
       <!-- Skills -->
       <!-- <section
@@ -366,7 +364,7 @@
             </div>
 
             <div id="social" class="content">
-              <div class="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4">
+              <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4">
                 <div class="w-full h-full overflow-hidden p-0">
                   <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/Donut.jpg" alt="">
               </div>       
@@ -387,7 +385,7 @@
             </div>
 
             <div id="poster" class="content">
-              <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4">                 
+              <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4">                 
                 <div class="w-full h-full overflow-hidden p-0">
                     <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/movie-1.jpg" alt="">
                 </div>
@@ -405,7 +403,7 @@
             </div>
 
             <div id="product" class="content">
-              <div class="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4">                 
+              <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4">                 
                 <div class="w-full h-full overflow-hidden p-0">
                     <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/SurgeFlow-2.jpg" alt="">
                 </div>
@@ -871,7 +869,7 @@
 
         <div class="flex flex-col gap-y-4 md:flex-row h-[50svh]">
           <div class="w-full text-white flex flex-col gap-y-5 text-center md:text-left">
-            <h1 class="text-lg sm:text-3xl lg:text-4xl font-medium">
+            <h1 class="text-lg sm:text-3xl lg:text-2xl font-medium">
               Send me a message
             </h1>
             <div class="flex flex-col items-center md:items-start">
