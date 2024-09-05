@@ -298,3 +298,234 @@ a {
 .thumbnail {
   touch-action: manipulation; /* Prevents default touch actions like scrolling when interacting */
 }
+
+/* .ul-wrapper-1 .ul-wrapper-2 {
+  height: 60px;
+  line-height: 1.6;
+  
+} */
+
+/* .ul-wrapper-2 li {
+  top: 0;
+  position: relative;
+  animation: slide 18s steps(8) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -545px;
+  }
+} */
+
+.ul-wrapper-2 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+}
+
+
+.list {
+  opacity: 0;
+  animation: showHideLoop 32s linear infinite; /* Looping animation */
+  color: white; /* Default color */
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+.list::before, .list::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: -1;
+  color: white;
+  background: rgb(252, 193, 0);
+}
+
+.list::before {
+  color: red;
+  z-index: -2;
+  clip: rect(0, 900px, 0, 0);
+}
+
+.list::after {
+  color: blue;
+  z-index: -3;
+  clip: rect(0, 0, 0, 900px);
+}
+
+
+.list:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.list:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.list:nth-child(3) {
+  animation-delay: 8s;
+}
+
+.list:nth-child(4) {
+  animation-delay: 12s;
+}
+
+.list:nth-child(5) {
+  animation-delay: 16s;
+}
+
+.list:nth-child(6) {
+  animation-delay: 20s;
+}
+
+.list:nth-child(7) {
+  animation-delay: 24s;
+}
+
+.list:nth-child(8) {
+  animation-delay: 28s;
+}
+
+@keyframes glitch {
+  0% {
+    opacity: 1;
+    clip: rect(40px, 9999px, 56px, 0);
+    transform: translate(0);
+  }
+  10% {
+    clip: rect(10px, 9999px, 50px, 0);
+    transform: translate(-2px, -2px);
+  }
+  20% {
+    clip: rect(30px, 9999px, 50px, 0);
+    transform: translate(2px, 2px);
+  }
+  30% {
+    clip: rect(5px, 9999px, 50px, 0);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    clip: rect(30px, 9999px, 55px, 0);
+    transform: translate(2px, -2px);
+  }
+  50% {
+    clip: rect(0px, 9999px, 40px, 0);
+    transform: translate(-1px, -1px);
+  }
+  60% {
+    clip: rect(20px, 9999px, 60px, 0);
+    transform: translate(1px, 1px);
+  }
+  70% {
+    clip: rect(15px, 9999px, 50px, 0);
+    transform: translate(-1px, 1px);
+  }
+  80% {
+    clip: rect(5px, 9999px, 45px, 0);
+    transform: translate(1px, -1px);
+  }
+  90% {
+    clip: rect(10px, 9999px, 40px, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    clip: rect(0px, 9999px, 0px, 0);
+    transform: translate(0);
+  }
+}
+
+@keyframes showHideLoop {
+  0%, 12% {
+    opacity: 0; /* Hidden */
+  }
+  12.5%, 22% {
+    opacity: 1; /* Visible */
+  }
+  22.5%, 25% {
+    animation: glitch 0.5s linear 5; /* Glitch effect before hiding */
+  }
+  25.5%, 100% {
+    opacity: 0; /* Hidden again */
+  }
+}
+
+
+.bgAnimation{
+  position: absolute;
+  top: 4%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(20,1fr);
+  grid-template-rows: repeat(20,1fr);
+  background: inherit;
+  filter: saturate(1);
+  overflow: hidden;
+  z-index: 0;
+}
+
+.colorBox{
+  z-index: 0;
+  transition: 2s ease;
+  position: relative;
+  margin: 2px;
+  background:  #1f2136;
+}
+
+.backgroundAmim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: #ff009d;
+  filter: blur(60px);
+  animation: animBack 6s linear infinite;
+}
+
+@keyframes animBack {
+  0%{
+      top: -60px;
+  }
+  100%{
+      top: 120%;
+  }
+}
+
+.bg-blur {
+  background: #1f21362c;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+@media (max-width: 768px) { /* For mobile devices */
+  .bgAnimation {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) { /* For iPad and similar devices */
+  .bgAnimation {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
+}
+

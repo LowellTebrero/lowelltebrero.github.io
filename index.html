@@ -59,13 +59,10 @@
     <section class="mx-auto w-[80%] md:w-[75%]">
       <header class="text-slate-100 sticky top-0 z-50">
         <nav class="flex justify-between pt-5 text-gray-400">
-          <h1 class="font-medium text-lg text-gray-200">
-            <span class="dev-color">Port</span>
-            folio
-          </h1>
+          <h1 class="font-medium text-lg text-gray-200"><span class="dev-color">Port</span>folio</h1>
           <div class="hidden sm:block">
             <ul class="flex gap-x-10">
-              <li class="text-white"><a href="#about-me">About me</a></li>
+              <li class="text-white"><a id="backToTop">About me</a></li>
               <!-- <li><a href="#skills">Skills</a></li> -->
               <li><a href="#projects">Projects</a></li>
               <!-- <li>
@@ -83,12 +80,9 @@
             </button>
           </div>
 
-          <aside
-            class="fixed right-0 top-0 bg-blue-950 h-full block sm:hidden w-zero"
-            id="sidebar"
-          >
+          <aside class="fixed right-0 top-0 bg-blue-950 h-full block sm:hidden w-zero" id="sidebar">
             <ul class="flex flex-col gap-y-10 p-5 pt-[5rem]">
-              <li class="text-white"><a href="#about-me">About me</a></li>
+              <li class="text-white"><a id="backToTop1">About me</a></li>
               <!-- <li><a href="#skills">Skills</a></li> -->
               <li><a href="#projects">Projects</a></li>
               <!-- <li>
@@ -102,132 +96,60 @@
         </nav>
       </header>
 
-      <main
-        class="hero-section flex flex-col lg:flex-row xl:mt-10 lg:h-[80svh]"
-        id="about-me"
-      >
-        <div
-          class="w-full text-white flex items-center lg:items-start flex-col gap-y-[6rem] py-[4rem] pb-[0] lg:py-[8rem]"
-        >
-          <div class="relative">
-            <h1
-              class="text-outline text-[2rem] sm:text-[3.6rem] lg:text-[3.5rem] xl:text-[4.2rem] 2xl:text-[5rem]"
-            >
-              Web Developer?
-            </h1>
-            <h1
-              class="text-gradient font-bold text-[1.3rem] sm:text-[2.5rem] lg:text-[2.7rem] xl:text-[3rem] 2xl:text-[3.2rem] h1 absolute top-[1.35rem] sm:top-[1.8rem] left-[1.5rem] sm:left-[2.5rem] lg:top-[2rem] xl:top-[2.5rem] 2xl:top-[3rem]"
-            >
-              A Graphic Designer?
-            </h1>
+      <div class="sticky top-16 h-[50svh] sm:h-[50svh] lg:h-[70svh] xl:h-[80svh] z-[-1] p-4 flex items-center justify-center">
+        <div class="bgAnimation" id="bgAnimation">
+          <div class="backgroundAmim">
           </div>
+        </div>
 
-          <div class="hidden lg:block">
-            <div
-              class="flex items-center lg:items-start flex-col gap-y-5 text-slat-400 text-slate-200"
-            >
-              <div class="flex gap-x-3">
-                <h1 class="text-2xl tracking-wider font-medium">
-                  Hi, I’m Lowell Tebrero
-                </h1>
-                <span
-                  ><img
-                    src="img/waving.png"
-                    width="30"
-                    class="waving"
-                    alt="waving"
-                /></span>
+        <div class="hidden lg:block">
+          <div class="flex items-center lg:items-center justify-center flex-col gap-y-5 text-slat-400 text-slate-200 overflow-hidden">       
+            <div class="w-full h-[50svh] flex items-center justify-center">
+              <div class="w-[80rem] overflow-hidden ul-wrapper-1">
+                <ul class="text-center text-[2.4rem] 2xl:text-[2.6rem] tracking-wider relative ul-wrapper-2">
+                  <li class="flex items-center justify-center gap-x-4 list absolute top-0">Hi, I’m Lowell Tebrero <img src="img/waving.png" width="50" class="waving" alt="waving"/></li>
+                  <li class="list absolute top-0">A web developer and graphic designer</li>
+                  <li class="list absolute top-0">with 2 years of experience.</li>
+                  <li class="list absolute top-0">I can create seamless websites and graphic design</li>
+                  <li class="list absolute top-0">using my skills, dedication, and perseverance.</li>
+                  <li class="list absolute top-0">I am willing to adapt other people's thoughts</li>
+                  <li class="list absolute top-0">in order to grow my passion and career</li>
+                  <li class="list absolute top-0">so that I can share my knowledge to connect with.</li>
+                </ul>
               </div>
-              <p
-                class="w-auto text-center lg:text-start font-extralight tracking-wide text-sm xl:text-lg"
-              >
-                A web developer and graphic designer with 2 years of experience, I
-                can create seamless websites and graphic design using my skills, dedication, and
-                perseverance. I am willing to adapt other people's thoughts in order to grow my
-                passion and career so that I can share my knowledge to connect
-                with. 
-              </p>
-              <a
-                href="https://drive.google.com/file/d/16EtxvhX0bf5JnUDAJkUrDgc4e2zje9j5/view?usp=drive_link"
-                target="_blank"
-                class="w-auto p-2 rounded bg-slate-900 hover:bg-slate-800 text-center"
-              >
-                Download CV
-              </a>
-            </div>
+            </div>      
           </div>
         </div>
 
-        <div
-          class="w-full flex items-start justify-center lg:justify-end pt-[2rem] lg:pt-[10rem] pr-0 2xl:pr-[5rem]"
-        >
-          <div class="relative">
-            <img
-              class="z-40 saturation w-[12rem] sm:w-[15rem] xl:w-[17rem] 2xl:w-[22rem]"
-              src="img/Profile.png"
-              width="350"
-              alt="Profile"
-            />
-            <img
-              class="absolute bottom-[6rem] sm:bottom-[7rem] right-0 -z-10 w-[7.5rem] sm:w-[10rem] xl:w-[12rem] 2xl:w-[15rem]"
-              src="img/Ellipse-1.png"
-              width="250"
-              alt=""
-            />
-            <img
-              class="absolute bottom-[5rem] left-2 -z-10 w-[6rem] sm:w-[8rem] xl:w-[10rem] 2xl:w-[12rem]"
-              src="img/Ellipse-2.png"
-              alt=""
-            />
-          </div>
-        </div>
-
-        <div class="block lg:hidden mt-10">
-          <div
-            class="flex items-center lg:items-start flex-col gap-y-5 text-slat-400 text-slate-200"
-          >
+        <div class="block lg:hidden relative">
+          <div class="flex items-center flex-col gap-y-5 text-slat-400 text-slate-200">
             <div class="flex gap-x-3">
-              <h1 class="text-xl sm:text-2xl tracking-wider font-medium">
-                Hi, I’m Lowell Tebrero
-              </h1>
-              <span
-                ><img
-                  src="img/waving.png"
-                  width="30"
-                  class="waving"
-                  alt="waving"
-              /></span>
+              <h1 class="text-xl sm:text-2xl tracking-wider font-medium"> Hi, I’m Lowell Tebrero</h1>
+              <span><img src="img/waving.png" width="30" class="waving" alt="waving"/></span>
             </div>
-            <p
-              class="w-auto text-center lg:text-start font-extralight tracking-wide text-sm lg:text-lg"
-            >
-            A web developer and graphic designer with 2 years of experience, I
-            can create seamless websites and graphic design using my skills, dedication, and
-            perseverance. I am willing to adapt other people's thoughts in order to grow my
-            passion and career so that I can share my knowledge to connect
-            with. 
-            </p>
-            <a
-              href="https://drive.google.com/file/d/16EtxvhX0bf5JnUDAJkUrDgc4e2zje9j5/view?usp=drive_link"
-              target="_blank"
-              class="w-auto p-2 rounded bg-slate-900 hover:bg-slate-800 text-center"
-            >
+            <p class="max-w-full mx-auto text-center font-extralight tracking-wide text-xs leading-relaxed break-words">
+              A web developer and graphic designer with 2 years of experience, I
+              can create seamless websites and graphic design using my skills, dedication, and
+              perseverance. I am willing to adapt other people's thoughts in order to grow my
+              passion and career so that I can share my knowledge to connect
+              with. 
+            </p>         
+            <a href="https://drive.google.com/file/d/16EtxvhX0bf5JnUDAJkUrDgc4e2zje9j5/view?usp=drive_link"
+              target="_blank" class="w-auto p-2 rounded bg-slate-900 hover:bg-slate-800 text-center text-sm">
               Download CV
             </a>
           </div>
         </div>
-      </main>
+      </div>
+    
 
-      <div
-        class="flex items-center justify-center mt-[5svh] lg:mt-[10svh] xl:mt-[3rem]"
-      >
+      <!-- <div class="flex items-center justify-center mt-[5svh] lg:mt-[10svh] xl:mt-[2rem]">
         <div class="main__scroll-box">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="2em"
             height="2em"
-            viewBox="0 0 24 24"
-          >
+            viewBox="0 0 24 24">
             <path
               fill="none"
               stroke="#e3e3e3"
@@ -238,7 +160,7 @@
             />
           </svg>
         </div>
-      </div>
+      </div> -->
 
       <!-- Skills -->
       <!-- <section
@@ -317,10 +239,11 @@
           />
         </div>
       </section> -->
+      <div class=" bg-blur px-6 pb-6">
 
+     
       <!-- Projects -->
-
-      <section id="projects" class="mt-[15svh] lg:mt-[0svh] flex flex-col gap-y-16">
+      <section id="projects" class="mt-[5svh] lg:mt-[0svh] flex flex-col gap-y-16 z-40">
         <div class="relativly flex flex-col items-center justify-center">
           <h1 class="text-title-outline text-[2.69rem] sm:text-[4.5rem]">PROJECTS</h1>
           <h1 class="text-gradient absolutly font-bold text-[1.4rem] sm:text-[2.5rem] top-[3.7svh] sm:top-[5.7svh] lg:top-[5.5svh] lg:text-[3rem]">PROJECTS</h1>
@@ -464,7 +387,7 @@
             </div>
 
             <div id="poster" class="content">
-              <div class="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4">                 
+              <div class="grid grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4">                 
                 <div class="w-full h-full overflow-hidden p-0">
                     <img class="h-full w-full rounded-lg object-cover" src="/img/graphics/movie-1.jpg" alt="">
                 </div>
@@ -935,8 +858,7 @@
       </section>
 
       <!-- Contacts -->
-      <section
-        id="contact" class="lg:h-[90svh] mt-[10svh] lg:mt-[10svh] flex flex-col gap-y-[4rem] sm:gap-y-[9rem] mb-[10rem]">
+      <section id="contact" class="lg:h-[90svh] mt-[10svh] lg:mt-[10svh] flex flex-col gap-y-[4rem] sm:gap-y-[9rem] mb-[10rem] z-40">
         <div class="relativly flex flex-col items-center justify-center">
           <h1 class="text-title-outline text-[2.60rem] sm:text-[4.5rem]">
            CONTACT
@@ -1032,6 +954,7 @@
           </div>
         </div>
       </section>
+      </div>
 
       <footer class="mt-[20svh] sm:mt-[5rem] h-[10vh]">
         <div class="text-center text-slate-300">

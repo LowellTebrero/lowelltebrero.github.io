@@ -147,3 +147,43 @@ thumbnailWrappers.forEach(wrapper => {
         handleThumbnailClick(wrapper, thumbnail);
     });
 });
+
+
+const bgAnimation = document.getElementById('bgAnimation');
+
+const numberOfColorBoxes = 400;
+
+for (let i = 0; i < numberOfColorBoxes; i++) {
+    const colorBox = document.createElement('div');
+    colorBox.classList.add('colorBox');
+    bgAnimation.append(colorBox)
+}
+
+
+window.onscroll = function() {
+  var backToTopButton = document.getElementById("backToTop");
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    backToTopButton.classList.add("show");
+  } else {
+    backToTopButton.classList.remove("show");
+  }
+};
+
+// Scroll back to top when the button is clicked
+document.getElementById("backToTop").onclick = function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+window.onscroll = function() {
+  var backToTopButton = document.getElementById("backToTop1");
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    backToTopButton.classList.add("show");
+  } else {
+    backToTopButton.classList.remove("show");
+  }
+};
+
+// Scroll back to top when the button is clicked
+document.getElementById("backToTop1").onclick = function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
