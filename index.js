@@ -187,3 +187,59 @@ window.onscroll = function() {
 document.getElementById("backToTop1").onclick = function() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 };
+
+
+
+// Select all images with the class 'image-modal-trigger'
+const imageElements = document.querySelectorAll('.image-modal-trigger');
+
+imageElements.forEach(image => {
+    image.addEventListener('click', function() {
+        // Set the modal image source to the clicked image's source
+        const modalImage = document.getElementById('modal-image');
+        modalImage.src = image.src;
+
+        // Show the modal
+        const modal = document.getElementById('default-modal');
+        modal.classList.remove('hidden');
+
+        // Disable scrolling on the body
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+// Close the modal when either the Close button or the X button is clicked
+const closeModalButtons = document.querySelectorAll('[data-modal-hide="default-modal"], #close-modal');
+
+closeModalButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const modal = document.getElementById('default-modal');
+        modal.classList.add('hidden');
+
+        // Enable scrolling on the body again
+        document.body.style.overflow = '';
+    });
+});
+
+// Close the modal when clicking outside the modal content
+const modal = document.getElementById('default-modal');
+modal.addEventListener('click', function(event) {
+    // Check if the click was outside the modal content area
+    if (event.target === modal) {
+        modal.classList.add('hidden');
+
+        // Enable scrolling on the body again
+        document.body.style.overflow = '';
+    }
+});
+
+// Close the modal when the Escape key is pressed
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') { // Escape key
+        const modal = document.getElementById('default-modal');
+        modal.classList.add('hidden');
+
+        // Enable scrolling on the body again
+        document.body.style.overflow = '';
+    }
+});
