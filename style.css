@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html, body {
+    font-family: "Poppins", sans-serif;
+    scrollbar-color: rgb(161, 161, 161)rgb(48, 48, 48);
+    scrollbar-width: thin;
+    scroll-behavior: smooth;  
+}
+
+.relativly {
+  position: relative;
+}
+.absolutly {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -35%);
+}
+
+.bg-gradient {
+    background-image: linear-gradient(to top, #24273E, #24273E, #1b1e32);
+}
+
+.dev-color {
+   color: #EF74F1;
+}
+
+.text-outline {
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke-width: .6px;
+    -webkit-text-stroke-color: #cecece;
+}
+
+.text-title-outline {
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke-width: .6px;
+    -webkit-text-stroke-color: #5a5a5a;
+}
+
+.text-gradient{
+    /* Fallback: Set a background color. */
+    background-color: red;
+    
+    /* Create the gradient. */
+    background-image: linear-gradient(to right, #BA15F4, #F15D78, #EA8C6F);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+
+.saturation {
+    filter: saturate(0);
+    transition: .5s ease;
+}
+.saturation:hover {
+    filter: saturate(100%);
+}
+
+.tabcontent {
+  display: none;
+}
+
+.tabcontent.active {
+  display: block;
+
+}
+
+/* Default styling for tab buttons */
+.tablink {
+ 
+  background-color: lightgray;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Styling for the active tab button */
+.tablink.active {
+  background-color: #3638d3; /* Green background color for active tab */
+  color: white;
+}
+
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.graphiclink {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.graphiclink.active {
+  color: #d6d7e6;
+  border: #3438d2 1px solid;
+}
+.content {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+}
+.content.active {
+  display: block;
+}
+.highlight-content img {
+  width: 300px;
+  height: 300px;
+}
+
+
+/* <reset-style> ============================ */
+a {
+    text-decoration: none;
+  }
+  /* <main-style> ============================ */
+  
+  .main__scroll-box {
+    animation: scroll-down 3s infinite;
+  }
+  
+  /* Animate scroll icon */
+  @keyframes scroll-down {
+    0%, 100% {
+      transform: translateY(0rem);
+      opacity: 1;
+    }
+  
+    35% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  
+    70% {
+      transform: translateY(-1rem);
+      opacity: 0;
+    }
+  }
+
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  }
+
+
+  .bright-light {
+    border-radius: 50%;
+    background-color: #542481;
+    box-shadow: 0px 0px 18px rgb(255, 0, 170);
+    animation: animate 20s linear infinite;
+    
+  }
+  .bright-light-1 {
+    border-radius: 50%;
+    background-color: #722481;
+    box-shadow: 0px 0px 18px rgb(255, 0, 170);
+    animation: animate 30s linear infinite;
+    
+  }
+  .bright-light-2 {
+    border-radius: 50%;
+    background-color: #813e24;
+    box-shadow: 0px 0px 18px rgb(255, 0, 170);
+    animation: animate 10s linear infinite;
+    
+  }
+
+  .wrapper div:nth-child(1) {
+    animation-delay: 0.6s;
+  }
+  .wrapper div:nth-child(2) {
+    animation-delay: 0.7s;
+  }
+  .wrapper div:nth-child(3) {
+    animation-delay: 1s;
+  }
+  .wrapper div:nth-child(4) {
+    animation-delay: 0.9s;
+  }
+  .wrapper div:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  .wrapper div:nth-child(6) {
+    animation-delay: 0.5s;
+  }
+  .wrapper div:nth-child(7) {
+    animation-delay: 0.10s;
+  }
+  .wrapper div:nth-child(8) {
+    animation-delay: 0.12s;
+  }
+  .wrapper div:nth-child(9) {
+    animation-delay: 0.8s;
+  }
+
+  @keyframes animate {
+    0% {
+     
+      opacity: 0;
+    }
+  
+    50% {
+      
+      opacity: 1;
+    }
+  
+    100% {
+     
+      opacity: 0;
+    }
+  }
+
+.waving {
+  animation: waves 5s infinite ;
+}
+
+@keyframes waves {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(60deg);
+  }
+ 
+  10% {
+    transform: rotate(-20deg);
+  }
+  15% {
+    transform: rotate(60deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+ 
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.w-zero {
+  width: 0rem;
+}
+
+.w-change {
+  width: 15rem;
+}
+
+.image-wrapper img {
+  transition: all .5s ease-in;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.1);
+}
+
+.featured-image-container {
+  height: 300px; /* Set a fixed height for the featured image */
+  overflow: hidden; /* Hide any overflow to ensure image fits */
+  display: flex; /* Use flex to center image */
+  align-items: center; /* Vertically center the image */
+  justify-content: center; /* Horizontally center the image */
+}
+
+/* Featured image should fit within the container */
+.featured-image-container img {
+  max-height: 100%; /* Ensure the image doesn't exceed the container height */
+  width: 100%; /* Keep aspect ratio */
+}
+
+   /* Thumbnail container */
+   .flow{
+    overflow-x: scroll; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents wrapping to the next line */
+    padding: 10px 0; /* Adds some padding to the thumbnail row */
+}
+
+/* Style adjustments for the thumbnail container */
+.overflow-hidden {
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: nowrap; /* Prevents wrapping to the next line */
+  -webkit-overflow-scrolling: touch; /* Enables momentum scrolling on iOS */
+  padding: 10px 0; /* Adds some padding to the thumbnail row */
+}
+
+/* Make sure the thumbnail is not interfering with touch events */
+.thumbnail {
+  touch-action: manipulation; /* Prevents default touch actions like scrolling when interacting */
+}
+
+
+.ul-wrapper-2 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+}
+
+
+.list {
+  opacity: 0;
+  animation: showHideLoop 40s linear infinite; /* Looping animation */
+  color: white; /* Default color */
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+
+.list:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.list:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.list:nth-child(3) {
+  animation-delay: 8s;
+}
+
+.list:nth-child(4) {
+  animation-delay: 12s;
+}
+
+.list:nth-child(5) {
+  animation-delay: 16s;
+}
+
+.list:nth-child(6) {
+  animation-delay: 20s;
+}
+
+.list:nth-child(7) {
+  animation-delay: 24s;
+}
+
+.list:nth-child(8) {
+  animation-delay: 28s;
+}
+.list:nth-child(9) {
+  animation-delay: 32s;
+}
+
+.list:nth-child(10) {
+  animation-delay: 36s;
+}
+
+
+
+@keyframes showHideLoop {
+  0%, 9.5% {
+    opacity: 0; /* Hidden */
+  }
+  10%, 16.5% {
+    opacity: 1; /* Visible */
+  }
+  18%, 100% {
+    opacity: 0; /* Hidden again */
+  }
+}
+
+
+.bgAnimation{
+  position: absolute;
+  top: 4%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(20,1fr);
+  grid-template-rows: repeat(20,1fr);
+  background: inherit;
+  filter: saturate(1);
+  overflow: hidden;
+  z-index: 0;
+}
+
+.colorBox{
+  z-index: 0;
+  transition: 2s ease;
+  position: relative;
+  margin: 2px;
+  background:  #1f2136;
+}
+
+.backgroundAmim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background: #ff009d;
+  filter: blur(60px);
+  animation: animBack 6s linear infinite;
+}
+
+@keyframes animBack {
+  0%{
+      top: -60px;
+  }
+  100%{
+      top: 120%;
+  }
+}
+
+.bg-blur {
+  background: #1f21362c;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+@media (max-width: 768px) { /* For mobile devices */
+  .bgAnimation {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) { /* For iPad and similar devices */
+  .bgAnimation {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+  }
+}
+
